@@ -1,0 +1,105 @@
+﻿.about-img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin: 10px auto;
+    border: 4px solid;
+}
+
+.bg_blue {
+    background-color: #337ab7;
+    color: #ffffff;
+}
+
+    .bg_blue h2, .bg_blue h3 {
+        color: #ffffff;
+    }
+
+.personal-title-small {
+    display: inline-flex;
+    text-align: center;
+}
+
+.width-25 {
+    width: 25px;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.margin-top-0 {
+    margin-top: 0px !important;
+}
+
+.row-exp {
+    margin-bottom: 30px;
+}
+
+.exp-title-small {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.exp-title-small-blue {
+    color: #337ab7;
+    border-bottom: 1px solid #337ab7;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.h-header {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.progress-bar.progress-bar-primary {
+    background-color: #c1c1c1;
+}
+
+.margin-center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.contact-info {
+     padding-left: 0px !important; 
+}
+
+.navbar-default {
+    background-color: #337ab7 !important;
+}
+
+    .navbar-default .navbar-nav > li > a {
+        color: #ffffff !important;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ffffff !important;
+    }
+
+@media (max-width: 768px) {
+    .mobile-center {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .fa-3x {
+        font-size: 2.5em !important;
+    }
+
+    .about-img {
+        width: 155px !important;
+        height: 155px !important;
+    }
+}
