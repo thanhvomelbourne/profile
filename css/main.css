@@ -4,7 +4,7 @@
 **************************/
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Barlow', 'Open Sans', Helvetica, Tahoma sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #666;
@@ -64,12 +64,45 @@ h3 {
   background-color: #017fb5;
 }
 
+.navbar-default {
+  border: none !important;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+}
+
+.navbar-default .navbar-collapse {
+  border: none !important;
+}
+
+.navbar-default .navbar-toggle {
+  transition: all .3s ease-out;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #012c3f;
+  border: 1px solid rgba(0,0,0,0);
+}
+
 .navbar-nav li a:hover, 
 .navbar-nav li a:focus {
   outline:none;
   outline-offset: 0;
   text-decoration:none;  
   background: transparent;
+}
+
+.navbar-header .logo {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-header .logo {
+    width: 36px;
+    height: 36px;
+    margin-top: 8px;
+  }
 }
 
 a {
@@ -124,11 +157,32 @@ section {
 #home-slider {
   overflow: hidden;
   position: relative;
+  height: 650px;
+}
+
+#home-slider #bg-particle {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 650px;
+  /*background: #2f5e97;  !* fallback for old browsers *!*/
+  /*background: -webkit-linear-gradient(to right, #337ab7, #25406e, #2f5e97);  !* Chrome 10-25, Safari 5.1-6 *!*/
+  /*background: linear-gradient(to right, #213963, #337ab7, #162140); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+}
+
+#home-slider #bg-canvas {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 650px;
+  background: #2f5e97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #337ab7, #25406e, #2f5e97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #213963, #337ab7, #162140); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #home-slider .caption {
   position: absolute;
-  top: 25%;
+  top: 240px;
   margin-top: -104px;
   left: 0;
   right: 0;
@@ -152,13 +206,14 @@ section {
   font-size: 14px;
   font-weight: 600;
   padding:14px 40px;
-  border: 1px solid #6e6d6c;
+  border: 1px solid #fff;
   border-radius: 4px;
   margin-top: 40px;
 }
 
 .caption .btn-start:hover {
-  color: #fff
+  color: #fff;
+  background-color: #1d2e53 !important;
 }
 
 .carousel-fade .carousel-inner .item {
@@ -167,7 +222,7 @@ section {
   transition-property: opacity;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 2037px;
+  height: 650px;
 }
 
 .carousel-fade .carousel-inner .item:after {
@@ -319,6 +374,10 @@ section {
   /*background-image: url(/images/about-bg.jpg);*/
   background-color: #337ab7;
   padding: 90px 0;
+
+  /*background: #2f5e97;  !* fallback for old browsers *!*/
+  /*background: -webkit-linear-gradient(to right, #337ab7, #25406e, #2f5e97);  !* Chrome 10-25, Safari 5.1-6 *!*/
+  /*background: linear-gradient(to right, #213963, #337ab7, #162140); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
 }
 
 #about-us h2 {
@@ -906,7 +965,7 @@ ul.address {
   width: 100%;
   color: #fff;
   border:0;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #footer {
