@@ -1,1306 +1,1357 @@
-    <!DOCTYPE html>
-    <!-- saved from url=(0022) -->
-    <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Anthony Vo</title>
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <link href="./css/animate.min.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Anthony Vo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="Anthony Vo" />
+  <meta name="keywords" content="Anthony Vo" />
+  <meta name="author" content="lmpixels" />
+  <link rel="shortcut icon" href="favicon.ico">
 
-        <link href="./css/font-awesome.min.css" rel="stylesheet">
-        <link href="./css/lightbox.css" rel="stylesheet">
-        <link href="./css/main.css" rel="stylesheet">
-        <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
-        <link href="./css/responsive.css" rel="stylesheet">
-        <link href="./css/customize.css" rel="stylesheet">
-        <!--[if lt IE 9]>
-          <script src="js/html5shiv.js"></script>
-          <script src="js/respond.min.js"></script>
-        <![endif]-->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css">
+  <link rel="stylesheet" href="css/animations.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/custom.css" type="text/css">
 
-        <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>-->
-        <link href='https://fonts.googleapis.com/css?family=Barlow:300,400,600,700' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" href="./images/main_logo.png">
+  <script src="js/modernizr.custom.js"></script>
 
-        <script type="text/javascript" src="./js/jquery.js"></script>
-        <script type="text/javascript" src="./js/anime.min.js"></script>
-        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="./js/jquery.inview.min.js"></script>
-        <script type="text/javascript" src="./js/wow.min.js"></script>
-        <script type="text/javascript" src="./js/mousescroll.js"></script>
-        <script type="text/javascript" src="./js/smoothscroll.js"></script>
-        <script type="text/javascript" src="./js/jquery.countTo.js"></script>
-        <script type="text/javascript" src="./js/lightbox.min.js"></script>
-        <script type="text/javascript" src="./js/trianglify.min.js"></script>
-        <script type="text/javascript" src="./js/particles.min.js"></script>
-        <script type="text/javascript" src="./js/typed.min.js"></script>
-        <script type="text/javascript" src="./js/main.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-97171984-1', 'auto');
+    ga('send', 'pageview');
 
-            ga('create', 'UA-97171984-1', 'auto');
-            ga('send', 'pageview');
+  </script>
+</head>
 
-        </script>
-    </head>
-    <body style="">
-        <!--.preloader-->
+<body>
+  <!-- Loading animation -->
+  <div class="preloader">
+    <div class="preloader-animation">
+      <div class="preloader-spinner">
+      </div>
+    </div>
+  </div>
+  <!-- /Loading animation -->
 
-        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/">
-                        <img class="logo" src="images/TLogo2-white.PNG" width="50" height="50" alt="logo white"/>
-                    </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a class="page-scroll" href="#personaldetail">Personal</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#about-us">About</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#whatcanido">Services</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#education">Educations</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#workingexperiences">Experiences</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#certificate">Certificates</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
-        <!--/.preloader-->
-        <header id="home">
-
-            <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
-                <canvas id="bg-canvas"></canvas>
-                <div id="bg-particle"></div>
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="caption">
-                            <img src="images/main_logo.png" style="width: 250px;">
-                            <h1 class="animated fadeInRightBig scale-up-texts">
-                                <span>Welcome to</span>
-                                <span>Anthony's Homepage</span>
-                            </h1>
-                            <div class="animated fadeInRightBig">
-                                <span class="typed-texts"></span>
-                            </div>
-                            <a data-scroll="" class="btn btn-start animated fadeInUpBig" href="#personaldetail">Find me more</a>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-                <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
-            </div><!--/#home-slider-->
-        </header><!--/#home-->
-
-
-
-
-    <section id="personaldetail">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-12 text-align-right">
-                    <div class="team-members">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 500ms; animation-name: none;">
-                                    <div class="member-image">
-                                        <img class="about-img" src="images/avatar.jpg" alt="">
-                                    </div>
-                                    <div class="member-info">
-                                        <h3>Anthony Vo</h3>
-                                        <h4>Senior .Net Fullstack Developer</h4>
-                                        <div class="social-icons">
-                                            <ul>
-                                                <li><a class="facebook" href="https://www.facebook.com/KichaVo" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a class="linkedin" href="https://www.linkedin.com/in/anthony-vo-180205105/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a class="skype" href="skype:anthony.vo@cognology.com.au?chat"><i class="fa fa-skype"></i></a></li>
-                                                <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9 col-sm-9 col-xs-12">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <h2 class="h-header font-weight-700 margin-top-0 mobile-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">Personal Detail</h2>
-                            <p class="text-justify wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 400ms; animation-name: none;">
-                                Call me Thanh Vo, a creative, thinker, and do-er who have a strong passion with more than 9 years experiences in Software Development.
-                                My professional focus is software development, ecommerce &amp; management systems, and customer services.
-                                I always try to understand my target audience as much as I can by using marketing strategies to interact with clients and add values into services provided in order to build a long-term relationship.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 500ms; animation-name: none;">
-                        <div class="col-md-3 col-sm-4 col-xs-4 personal-title-small">
-                            <div class="width-25"><i class="fa fa-user" aria-hidden="true"></i></div> Full Name:
-                        </div>
-                        <div class="col-md-9 col-sm-8 col-xs-8">
-                            <p class="font-weight-700 margin-bottom-0">Thanh Minh Vo (Anthony Vo)</p>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-4 personal-title-small">
-                            <div class="width-25"><i class="fa fa-calendar" aria-hidden="true"></i></div> DOB:
-                        </div>
-                        <div class="col-md-9 col-sm-8 col-xs-8">
-                            <p class="font-weight-700 margin-bottom-0">29<sup>th</sup>, June, 1992</p>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-4 personal-title-small">
-                            <div class="width-25"><i class="fa fa-transgender-alt" aria-hidden="true"></i></div> Gender:
-                        </div>
-                        <div class="col-md-9 col-sm-8 col-xs-8">
-                            <p class="font-weight-700 margin-bottom-0">Male</p>
-                        </div>
-
-                        <div class="col-md-3 col-sm-4 col-xs-4 personal-title-small">
-                            <div class="width-25"><i class="fa fa-map-marker" aria-hidden="true"></i></div> Location:
-                        </div>
-                        <div class="col-md-9 col-sm-8 col-xs-8">
-                            <p class="font-weight-700 margin-bottom-0">Melbourne, Vic 3000, Australia</p>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-4 personal-title-small">
-                            <div class="width-25"><i class="fa fa-mobile" aria-hidden="true"></i></div> Phone:
-                        </div>
-                        <div class="col-md-9 col-sm-8 col-xs-8">
-                            <p class="font-weight-700 margin-bottom-0">(+61) 420 833 757</p>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-4 personal-title-small">
-                            <div class="width-25"><i class="fa fa-envelope" aria-hidden="true"></i></div> Email:
-                        </div>
-                        <div class="col-md-9 col-sm-8 col-xs-8">
-                            <p class="font-weight-700 margin-bottom-0">thanhvo.melbourne@gmail.com</p>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-4 personal-title-small">
-                            <div class="width-25"><i class="fa fa-skype" aria-hidden="true"></i></div> Skype:
-                        </div>
-                        <div class="col-md-9 col-sm-8 col-xs-8">
-                            <p class="font-weight-700 margin-bottom-0">thanhvmse90059</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div id="page" class="page">
+    <!-- Header -->
+    <header id="site_header" class="header mobile-menu-hide">
+      <div class="header-content clearfix">
+        <div class="my-photo">
+          <img class="circle_image" src="images/avatar.jpg" alt="image">
         </div>
-    </section>
+        <!-- <div class="home-photo">
+          <div class="hp-inner" style="background-position: calc(50% + -3.81641px) calc(50% + 9.08619px);"></div>
+      </div> -->
 
-    <section id="about-us" class="parallax">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                        <h2 class="h-header font-weight-700 margin-top-0" style="padding-bottom: 0px">About Me</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12 text-justify">
-                            <div class="row-exp margin-bottom-20 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <p class="font-weight-700">1. Software development:</p>
-                                <p>
-                                    - Develop winform applications, web applications, web services, mobile applications and design UI/UX web. <br>
-                                    - Research new technologies, work multi-task and multiple projects. <br>
-                                    - Find solutions for issues and build architecture for systems.
-                                </p>
-                            </div>
-                            <div class="row-exp margin-bottom-20 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <p class="font-weight-700">2. Process and development practices:</p>
-                                <p>
-                                    - Follow software development process, especially Scrum agile disciplines and principles. <br>
-                                    - Contribute ideas to improve process and development practices.
-                                </p>
-                            </div>
-                            <div class="row-exp margin-bottom-20 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <p class="font-weight-700">3. Communication and collaboration:</p>
-                                <p>
-                                    - Join daily meeting with customer in English, make sure all relevant information to the team and project are shared and discussed before acknowledgement. <br>
-                                    - Support team members and customer in ideas, solutions and technical issues. <br>
-                                    - Manage task of team members. <br>
-                                    - Onsite in customer’s side to get requirements and business of system, recommend idea for customer. <br>
-                                    - Handle the problems in a short time directly in the client side.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 hidden-xs"><br><br></div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                    <p class="lead">User Experiances</p>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="85">85%</div>
-                                    </div>
-                                </div>
-                                <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 400ms; animation-name: none;">
-                                    <p class="lead">Web Design (HTML5, CSS3, JS)</p>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="80">80%</div>
-                                    </div>
-                                </div>
-                                <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 500ms; animation-name: none;">
-                                    <p class="lead">Programming (C# .Net)</p>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="95">95%</div>
-                                    </div>
-                                </div>
-                                <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 500ms; animation-name: none;">
-                                    <p class="lead">Mobile Hybrid Application Development (Ionic Framework, AngularJs)</p>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="80">80%</div>
-                                    </div>
-                                </div>
-                                <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 600ms; animation-name: none;">
-                                    <p class="lead">System Knowledges</p>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="95">95%</div>
-                                    </div>
-                                </div>
-                                <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 600ms; animation-name: none;">
-                                    <p class="lead">CMS (Umbraco, Sitecore, EpiServer)</p>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="90">90%</div>
-                                    </div>
-                                </div>
-                                <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 600ms; animation-name: none;">
-                                    <p class="lead">Delivery + Quality</p>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="100">100%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="site-title-block">
+          <div class="site-title">Anthony Vo</div>
         </div>
-    </section>
 
-    <section id="whatcanido">
-        <div class="container">
-            <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                <div class="row">
-                    <div class="text-center col-sm-8 col-sm-offset-2">
-                        <h2 class="h-header font-weight-700 margin-top-0 mobile-center">What can I do?</h2>
-                        <p>Your ambition is resolute. Your time is precious. I create software to launch your vision.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center our-services">
-                <div class="row">
-                    <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 450ms; animation-name: none;">
-                        <div class="">
-                            <i class="fa fa-puzzle-piece fa-4x text-primary"></i>
-                        </div>
-                        <div class="service-info">
-                            <h3>Creative Idea</h3>
-                            <p class="text-justify">I can help you with defining your online business requirements and guide throughout the execution. I ensure that your store is not only up and running smoothly, but continuously optimized to keep up with the competition.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 650ms; animation-name: none;">
-                        <div class="">
-                            <i class="fa fa-crop fa-4x text-primary"></i>
-                        </div>
-                        <div class="service-info">
-                            <h3>Professional Design</h3>
-                            <p class="text-justify">Design is a rather broad and vague term. When someone says “I’m a designer,” it is not immediately clear what they actually do day to day. My goal is to develop an engaging, customer-led experience that drives sales by converting new and existing visitors.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 750ms; animation-name: none;">
-                        <div class="">
-                            <i class="fa fa-desktop fa-4x text-primary"></i>
-                        </div>
-                        <div class="service-info">
-                            <h3>App Development</h3>
-                            <p class="text-justify">I have experiences in delivering sites to both end customers and sub-suppliers. Having knowledge to build a based system by C# .Net language and I also have experiences in CMS platforms like Sitecore, Umbraco, EpiServer...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Navigation -->
+        <div class="site-nav">
+          <!-- Main menu -->
+          <ul id="nav" class="site-main-menu">
+            <li>
+              <a class="pt-trigger" href="#about-me">About Me</a><!-- href value = data-id without # of .pt-page. -->
+            </li>
+            <li>
+              <a class="pt-trigger" href="#resume">Resume</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#blog">Blog</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- /Main menu -->
         </div>
-    </section>
+        <!-- Navigation -->
 
-    <section id="education" class="bg_blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-12 mobile-center" style="font-size: 50px;">
-                    <i class="fa fa-graduation-cap fa-3x gly-avatar-left" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-9 col-sm-9 col-xs-12">
-                    <h2 class="h-header font-weight-700 margin-top-0 mobile-center">EDUCATIONS</h2>
-                    <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                        <div class="col-md-12 col-sm-12 col-xs-12 exp-title-small font-weight-700 ng-binding">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2010 - 2014
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                            <div class="row">
-                                <div class="col-sm-12 font-weight-700 ng-binding">
-                                    &nbsp;&nbsp;<i class="fa fa-university"></i>&nbsp;&nbsp;FPT University, Danang, Vietnam
-                                </div>
-                                <div class="col-sm-12 ng-binding">
-                                    &nbsp;&nbsp; • Bachelor of Software Engineering (Information System)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                        <div class="col-md-12 col-sm-12 col-xs-12 exp-title-small font-weight-700 ng-binding">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2016 - 2017
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                            <div class="row">
-                                <div class="col-sm-12 font-weight-700 ng-binding">
-                                    &nbsp;&nbsp;<i class="fa fa-university"></i>&nbsp;&nbsp;Central Queensland University, Melbourne, Australia
-                                </div>
-                                <div class="col-sm-12 ng-binding">
-                                    &nbsp;&nbsp; • Graduate Certificate in Information Technology (Software Development)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                        <div class="col-md-12 col-sm-12 col-xs-12 exp-title-small font-weight-700 ng-binding">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2016 - 2017
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                            <div class="row">
-                                <div class="col-sm-12 font-weight-700 ng-binding">
-                                    &nbsp;&nbsp;<i class="fa fa-university"></i>&nbsp;&nbsp;Central Queensland University, Melbourne, Australia
-                                </div>
-                                <div class="col-sm-12 ng-binding">
-                                    &nbsp;&nbsp; • Graduate Diploma of Information Technology (Software Development)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                        <div class="col-md-12 col-sm-12 col-xs-12 exp-title-small font-weight-700 ng-binding">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2016 - 2018
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                            <div class="row">
-                                <div class="col-sm-12 font-weight-700 ng-binding">
-                                    <i class="fa fa-university"></i>&nbsp;&nbsp;Central Queensland University, Melbourne, Australia
-                                </div>
-                                <div class="col-sm-12 ng-binding">
-                                    &nbsp;&nbsp; • Master of Information Technology (Mobile Application Development)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
         </div>
-    </section>
+        <!-- / Social Links -->
 
-    <section id="workingexperiences">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1 col-sm-1 col-xs-12 mobile-center" style="font-size: 50px;">
-                    <i class="fa fa-briefcase fa-1x gly-avatar-left" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-11 col-sm-11 col-xs-12">
-                    <h2 class="h-header font-weight-700 margin-top-0 mobile-center">WORKING EXPERIENCES</h2>
-                    <h2>Full-time</h2>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;05/2013 – 07/2015
-                                </div>
-                                <div class="col-md-1 col-sm-10 hidden-xs"></div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="images/logo/fpt.png" style="width: 50px">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="col-sm-12 font-weight-700 ng-binding">
-                                                FPT Software, Danang, Vietnam
-                                            </div>
-                                            <div class="col-sm-12 ng-binding">
-                                                .Net Developer
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <!-- Copyrights -->
+        <div class="copyrights">© 2021 All rights reserved.</div>
+        <!-- / Copyrights -->
+      </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Mobile Header -->
+    <div class="mobile-header mobile-visible">
+      <div class="mobile-logo-container">
+        <div class="mobile-header-image">
+          <a href="#">
+            <img class="circle_image" src="images/avatar.jpg" alt="image">
+          </a>
+        </div>
+        <div class="mobile-site-title"><a href="#">Anthony Vo</a></div>
+      </div>
+
+      <a class="menu-toggle mobile-visible">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- /Mobile Header -->
+
+    <!-- Arrows Nav -->
+    <div class="lmpixels-arrows-nav">
+      <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+      <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+    </div>
+    <!-- /Arrows Nav -->
+
+    <!-- Main Content -->
+    <div id="main" class="site-main">
+      <!-- Page changer wrapper -->
+      <div class="pt-wrapper">
+        <!-- Subpages -->
+        <div class="subpages">
+
+          <!-- Home Subpage -->
+          <section class="pt-page" data-id="about-me">
+            <div class="section-inner start-page-full-width">
+              <div class="start-page-full-width">
+                <div class="row pc_view display_webkit_box">
+                  <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="inner-content">
+                      <div class="hp-text-block">
+
+                        <span class="sp-subtitle typed-texts"></span>
+                        <h2 class="hp-main-title">Anthony Vo</h2>
+
+                        <p>I'm a creative thinker and do-er who have a strong passion with 9 year experiences in
+                          software development. My professional focus is software development, ecommerce & management
+                          systems, and customer services. I always try to understand my target audience as much as I can
+                          by using marketing strategies to interact with clients and add values into services provided
+                          in order to build a long-term relationship.</p>
+                        <div class="hp-buttons">
+                          <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
                         </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;07/2015 – 09/2015
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="images/logo/niteco.png" style="width: 50px">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="col-sm-12 font-weight-700 ng-binding">
-                                                Niteco Vietnam, Hanoi, Vietnam
-                                            </div>
-                                            <div class="col-sm-12 ng-binding">
-                                                .Net Developer
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-              <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                  <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;10/2015 – 04/2016
-                  </div>
-                  <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                    <div class="row">
-                      <div class="col-md-2 col-sm-2 col-xs-2">
-                        <img src="images/logo/smartosc.png" style="width: 55px">
                       </div>
-                      <div class="col-md-10 col-sm-10 col-xs-10">
-                        <div class="col-sm-12 font-weight-700 ng-binding">
-                          SmartOSC Vietnam, Hanoi, Vietnam
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="inner-content">
+                      <div class="hp-text-block">
+                        <div class="row margin_top_pc_50">
+
+                          <div class="col-md-3 col-sm-4 col-xs-4">
+                            <i class="far fa-user-circle" aria-hidden="true"></i> Full Name:
+                          </div>
+                          <div class="col-md-9 col-sm-8 col-xs-8">
+                            <p>Thanh Minh Vo (Anthony Vo)</p>
+                          </div>
+
+                          <div class="col-md-3 col-sm-4 col-xs-4">
+                            <i class="far fa-calendar-alt" aria-hidden="true"></i> DOB:
+                          </div>
+                          <div class="col-md-9 col-sm-8 col-xs-8">
+                            <p>29<sup>th</sup>, June, 1992</p>
+                          </div>
+                          <div class="col-md-3 col-sm-4 col-xs-4">
+                            <i class="fa fa-transgender-alt" aria-hidden="true"></i> Gender:
+                          </div>
+                          <div class="col-md-9 col-sm-8 col-xs-8">
+                            <p>Male</p>
+                          </div>
+                          <div class="col-md-3 col-sm-4 col-xs-4">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Location:
+                          </div>
+                          <div class="col-md-9 col-sm-8 col-xs-8">
+                            <p>Melbourne, Vic 3000, Australia</p>
+                          </div>
+                          <div class="col-md-3 col-sm-4 col-xs-4">
+                            <i class="fas fa-mobile-alt" aria-hidden="true"></i> Phone:
+                          </div>
+                          <div class="col-md-9 col-sm-8 col-xs-8">
+                            <p>(+61) 420 833 757</p>
+                          </div>
+                          <div class="col-md-3 col-sm-4 col-xs-4">
+                            <i class="far fa-envelope" aria-hidden="true"></i> Email:
+                          </div>
+                          <div class="col-md-9 col-sm-8 col-xs-8">
+                            <p>thanhvo.melbourne@gmail.com</p>
+                          </div>
                         </div>
-                        <div class="col-sm-12 ng-binding">
-                          Senior .Net Developer
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mobile_view">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="inner-content">
+                      <div class="hp-text-block">
+
+                        <span class="sp-subtitle typed-texts-mobile"></span>
+                        <h2 class="hp-main-title">Anthony Vo</h2>
+                        <p>I'm a creative thinker and do-er who have a strong passion with 9 year experiences in
+                          software development. My professional focus is software development, ecommerce & management
+                          systems, and customer services. I always try to understand my target audience as much as I can
+                          by using marketing strategies to interact with clients and add values into services provided
+                          in order to build a long-term relationship.</p>
+
+                        <br>
+                        <p><i class="far fa-user-circle" aria-hidden="true"></i> Thanh Minh Vo (Anthony Vo)</p>
+                        <p><i class="far fa-calendar-alt" aria-hidden="true"></i>
+                          29<sup>th</sup>, June, 1992</p>
+                        <p><i class="fa fa-transgender-alt" aria-hidden="true"></i> Male </p>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Melbourne, Vic 3000, Australia</p>
+                        <p><i class="fas fa-mobile-alt" aria-hidden="true"></i> (+61) 420 833 757</p>
+                        <p><i class="far fa-envelope" aria-hidden="true"></i> thanhvo.melbourne@gmail.com</p>
+
+                        <div class="hp-buttons">
+                          <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;08/2016 - 07/2018
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="images/logo/fbs.png" style="width: 45px">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="col-sm-12 font-weight-700 ng-binding">
-                                                Future Business System, Melbourne, Australia
-                                            </div>
-                                            <div class="col-sm-12 ng-binding">
-                                                Senior .Net Fullstack Developer
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-5 col-xs-12">
-                            <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;07/2018 – Now
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="images/logo/cognology.png" style="width: 55px">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="col-sm-12 font-weight-700 ng-binding">
-                                                Cognology, Melbourne, Australia
-                                            </div>
-                                            <div class="col-sm-12 ng-binding">
-                                                Senior .Net Developer
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h2>Onsite</h2>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;11/2014 – 02/2015
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="images/logo/petronas.jpg" style="width: 55px">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="col-sm-12 font-weight-700 ng-binding">
-                                                Petronas ICT, Kuala Lumpur, Malaysia
-                                            </div>
-                                            <div class="col-sm-12 ng-binding">
-                                                .Net Fullstack Developer
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;11/2015 – 02/2016
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="images/logo/dt.png" style="width: 55px">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="col-sm-12 font-weight-700 ng-binding">
-                                                DT Digital, Melbourne, Australia
-                                            </div>
-                                            <div class="col-sm-12 ng-binding">
-                                                Senior .Net Developer
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h2>Part-time Freelance</h2>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;07/2014 – 02/2015
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="images/logo/medicyne.png" style="width: 45px">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="col-sm-12 font-weight-700 ng-binding">
-                                                Medicyne, San Francisco, USA
-                                            </div>
-                                            <div class="col-sm-12 ng-binding">
-                                                iOS Developer
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;02/2015 – 04/2015
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="images/logo/stuff.png" style="width: 55px">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="col-sm-12 font-weight-700 ng-binding">
-                                                StuffHopper, Seattle, USA
-                                            </div>
-                                            <div class="col-sm-12 ng-binding">
-                                                iOS Developer
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;01/2017 – 04/2017
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="images/logo/nav.jpg" style="width: 45px">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="col-sm-12 font-weight-700 ng-binding">
-                                                Navaron, Melbourne, Australia
-                                            </div>
-                                            <div class="col-sm-12 ng-binding">
-                                                Senior .Net Fullstack Developer
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-						<div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;04/2017 – 06/2017
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="images/logo/thegreenleaf.png" style="width: 70px">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="col-sm-12 font-weight-700 ng-binding">
-                                                The green leaf, Melbourne, Australia
-                                            </div>
-                                            <div class="col-sm-12 ng-binding">
-                                                Solution Architect
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-						<div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;06/2017 – 10/2017
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="images/logo/caterwin.png" style="width: 45px">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="col-sm-12 font-weight-700 ng-binding">
-                                                Caterwin, Melbourne, Australia
-                                            </div>
-                                            <div class="col-sm-12 ng-binding">
-                                                Project Manager
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-						<div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <div class="col-md-11 col-sm-11 col-xs-12 exp-title-small-blue font-weight-700 ng-binding">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;04/2018 – Now
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                                    <div class="row">
-                                        <div class="col-md-2 col-sm-2 col-xs-2">
-                                            <img src="images/logo/househomelove.png" style="width: 45px">
-                                        </div>
-                                        <div class="col-md-10 col-sm-10 col-xs-10">
-                                            <div class="col-sm-12 font-weight-700 ng-binding">
-                                                Househomelove, Melbourne, Australia
-                                            </div>
-                                            <div class="col-sm-12 ng-binding">
-                                                Solution Architect
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
             </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="certificate" class="bg_blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-12 mobile-center" style="font-size: 50px;">
-                    <i class="fa fa-certificate fa-3x gly-avatar-left" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-9 col-sm-9 col-xs-12">
-                    <h2 class="h-header font-weight-700 margin-top-0 mobile-center">CERTIFICATES</h2>
-                    <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                        <div class="col-md-12 col-sm-12 col-xs-12 exp-title-small font-weight-700 ng-binding">
-                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>&nbsp;&nbsp;FPT University
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                            <div class="row">
-                                <div class="col-sm-12 ng-binding">
-                                    &nbsp;&nbsp; • Bachelor of Software Engineering (Information System)<br>
-                                    &nbsp;&nbsp; • The honor certificate for outstanding academic performance in Programming C subject<br>
-                                    &nbsp;&nbsp; • The honor certificate for outstanding academic performance in Data structures and Algorithms in Programming Java subject<br>
-                                    &nbsp;&nbsp; • The honor certificate for outstanding academic performance in Programming C# .Net subject
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                        <div class="col-md-12 col-sm-12 col-xs-12 exp-title-small font-weight-700 ng-binding">
-                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>&nbsp;&nbsp;Central Queensland University
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                            <div class="row">
-                                <div class="col-sm-12 ng-binding">
-                                    &nbsp;&nbsp; • Graduate Certificate in Information Technology (Software Development)<br>
-                                    &nbsp;&nbsp; • Graduate Diploma of Information Technology (Software Development)<br>
-                                    &nbsp;&nbsp; • Master of Information Technology (Mobile Application Developemt)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                        <div class="col-md-12 col-sm-12 col-xs-12 exp-title-small font-weight-700 ng-binding">
-                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>&nbsp;&nbsp;Microsoft
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                            <div class="row">
-                                <div class="col-sm-12 ng-binding">
-                                    &nbsp;&nbsp; • Developing ASP.NET MVC Web Applications<br>
-                                    &nbsp;&nbsp; • Microsoft Programming in HTML5 with JavaScript and CSS3<br>
-                                    &nbsp;&nbsp; • Web Applications Solution Developer
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-exp ng-scope wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                        <div class="col-md-12 col-sm-12 col-xs-12 exp-title-small font-weight-700 ng-binding">
-                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>&nbsp;&nbsp;CMS
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
-                            <div class="row">
-                                <div class="col-sm-12 ng-binding">
-                                    &nbsp;&nbsp; • EpiServer CMS 7<br>
-                                    &nbsp;&nbsp; • SiteVision CMS<br>
-                                    &nbsp;&nbsp; • Umbraco CMS 7
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                    <h2>My Portfolio</h2>
-                    <p>
-                        I understand quite clearly about software development processes and concepts. Having development experiences with C, C++, Java, HTML5, CSS3, JavaScript, Ajax, Json and especially C# .Net. And I also have development experiences in Title Insurance, Medicine, Social Networking, Management System and E-Commerce
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/ramquest_logo.jpg" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" onclick="return false;" data-toggle="modal" data-target="#myModal"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/ramquest_logo.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 400ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/petronas.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/petronas.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 500ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/medicyne.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/medicyne.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 600ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/stuffhopper.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/stuffhopper.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="700ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 700ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/pavaso.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/pavaso.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="800ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 800ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/firstchoice.jpg" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/firstchoice.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="900ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 900ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/fsw.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/fsw.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="1000ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/dissh.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/dissh.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="1000ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/fella.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/fella.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="1000ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/bonza.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/bonza.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="1000ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/bs.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/bs.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="1000ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/oxford.gif" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/oxford.gif" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="1000ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/edge.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/edge.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="1000ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/wil.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/wil.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="1000ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/bbb.jpg" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/bbb.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="1000ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/mysize.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/mysize.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="1000ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/famous.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/famous.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="border: 1px solid #2d6097;">
-                    <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="1000ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/caromba.png" alt="">
-                        </div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <div class="overlay-text">
-                                    <div class="folio-info">
-                                        <h3>Time Hours</h3>
-                                        <p>Design, Photography</p>
-                                    </div>
-                                    <div class="folio-overview">
-                                        <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html"><i class="fa fa-link"></i></a></span>
-                                        <span class="folio-expand"><a href="images/portfolio/caromba.png" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="portfolio-single-wrap">
-            <div id="portfolio-single">
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div id="contact-us" class="parallax">
-            <div class="container">
+            <div class="section-inner custom-page-content">
+              <div class="page-content">
+                <!-- Services Block Title -->
                 <div class="row">
-                    <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                        <h2>CONTACT ME</h2>
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="col-inner">
+                      <div class="block-title">
+                        <h3>What I Do</h3>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 600ms; animation-name: none;">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
-                                <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <input type="text" name="name" class="form-control" placeholder="Name" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn-submit" style="background-color: #ffffff; color: #2d6097">Send Now</button>
-                                </div>
-                            </form>
+                <!-- /Services Block Title -->
+
+                <!-- Services Block -->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="col-inner">
+                      <div class="info-list-w-icon">
+                        <!-- Service Item 1 -->
+                        <div class="info-block-w-icon">
+                          <div class="ci-icon">
+                            <i class="lnr lnr-store"></i>
+                          </div>
+                          <div class="ci-text">
+                            <h4>Creative Idea</h4>
+                            <p>I can help you with defining your online business requirements and guide throughout the
+                              execution. I ensure that your store is not only up and running smoothly, but continuously
+                              optimized to keep up with the competition and push up performance.</p>
+                          </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
-                                <ul class="address">
-                                    <li><p>Ready to start your next project with me? That's great! Give me a call or send me an email and we will get back to you as soon as possible!</p></li>
-                                    <li><i class="fa fa-map-marker"></i> <span> &nbsp; Address:</span> Melbourne, VIC 3000, Australia </li>
-                                    <li><i class="fa fa-phone"></i> <span> &nbsp; Phone:</span> (+61) 420 833 757  </li>
-                                    <li><i class="fa fa-envelope"></i> <span> &nbsp; Email:</span><a href="mailto:thanhvo.melbourne@gmail.com"> thanhvo.melbourne@gmail.com</a></li>
-                                    <li><i class="fa fa-globe"></i> <span> &nbsp; Website:</span> <a href="#">www.anthonyvo.dev</a></li>
-                                </ul>
+                        <!-- /Service Item 1 -->
+
+                        <!-- Service Item 2 -->
+                        <div class="info-block-w-icon">
+                          <div class="ci-icon">
+                            <i class="lnr lnr-laptop-phone"></i>
+                          </div>
+                          <div class="ci-text">
+                            <h4>Professional Design</h4>
+                            <p>Design is a rather broad and vague term. When someone says “I’m a designer,” it is not
+                              immediately clear what they actually do day to day. My goal is to develop an engaging,
+                              customer-led experience that drives sales by converting new and existing visitors.</p>
+                          </div>
+                        </div>
+                        <!-- Service Item 2 -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="col-inner">
+                      <div class="info-list-w-icon">
+                        <!-- Service Item 3 -->
+                        <div class="info-block-w-icon">
+                          <div class="ci-icon">
+                            <i class="lnr lnr-pencil"></i>
+                          </div>
+                          <div class="ci-text">
+                            <h4>App Development</h4>
+                            <p>I have experiences in delivering sites to both end customers and sub-suppliers. Having
+                              knowledge to build a based system by C# language & .Net framework and I also have
+                              experiences in CMS platforms like Sitecore, Umbraco, EpiServer...</p>
+                          </div>
+                        </div>
+                        <!-- Service Item 3 -->
+
+                        <!-- Service Item 4 -->
+                        <div class="info-block-w-icon">
+                          <div class="ci-icon">
+                            <i class="lnr lnr-flag"></i>
+                          </div>
+                          <div class="ci-text">
+                            <h4>Project Management</h4>
+                            <p>More and more organizations are adopting an Agile style of project management. Agile is a
+                              collaborative methodology that uses short development cycles called “sprints” to
+                              incorporate stakeholder and customer feedback along the way. The goal is to embrace
+                              flexibility and continuous improvement, resulting in a better end product.</p>
+                          </div>
+                        </div>
+                        <!-- Service Item 4 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Services Block -->
+              </div>
+            </div>
+          </section>
+          <!-- End of Home Subpage -->
+
+          <!-- Resume Subpage -->
+          <section class="pt-page" data-id="resume">
+            <div class="section-inner custom-page-content">
+              <div class="section-title-block second-style">
+                <h2 class="section-title">Resume</h2>
+                <h5 class="section-description">9 Years of Experience</h5>
+              </div>
+
+              <div class="section-content">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8">
+                    <div class="col-inner bs-30">
+                      <div class="block-title">
+                        <h3>Education</h3>
+                      </div>
+
+                      <div class="timeline timeline-second-style bs-30 clearfix">
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">05/2016 - 04/2018</h5>
+                            <img class="company_logo_50" src="images/schools/cqu.png"
+                              alt="Central Queensland Univeristy">
+                            <span class="item-company">Central Queensland University</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Master of Information System</h4>
+                            <span class="item-company">
+                              <i class="fas fa-map-marker-alt"></i>&nbsp; Melbourne, Australia
+                            </span>
+                            <p>
+                              &nbsp;&nbsp; • Graduate Certificate in Information Technology (Software Development)<br>
+                              &nbsp;&nbsp; • Graduate Diploma of Information Technology (Software Development)<br>
+                              &nbsp;&nbsp; • Master of Information Technology (Mobile Application Developemt)
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">09/2010 - 08/2014</h5>
+                            <img class="company_logo" src="images/schools/fptuniversity.jpeg" alt="FPT Univeristy">
+                            <span class="item-company">FPT University</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Bachelor of Software Engineering</h4>
+                            <span class="item-company">
+                              <i class="fas fa-map-marker-alt"></i>&nbsp; Danang, Vietnam
+                            </span>
+                            <p>
+                              &nbsp;&nbsp; • The honor certificate for outstanding academic performance in Programming C
+                              subject<br>
+                              &nbsp;&nbsp; • The honor certificate for outstanding academic performance in Data
+                              structures and Algorithms in Programming Java
+                              subject<br>
+                              &nbsp;&nbsp; • The honor certificate for outstanding academic performance in
+                              Programming C# .Net subject <br>
+                              &nbsp;&nbsp; • Bachelor of Software Engineering (Information System)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="block-title">
+                        <h3>Full-time<span></span></h3>
+                      </div>
+
+                      <div class="timeline timeline-second-style clearfix">
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">07/2018 - Current</h5>
+                            <img class="company_logo" src="images/companies/cognology.png" alt="Cognology">
+                            <span class="item-company">
+                              Cognology
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Senior Full-stack Developer</h4>
+                            <span class="item-company">
+                              <i class="fas fa-map-marker-alt"></i>&nbsp; Melbourne, Australia
+                            </span>
+                            <p>Build technology to help our clients with performance, engagement, retention and learning
+                              for their entire employment lifecycle. Our research and development efforts are
+                              continually looking for ways to make it easier for our customers to execute business
+                              strategy, develop their people and do great things together.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">08/2016 - 07/2018</h5>
+                            <img class="company_logo" src="images/companies/fbs.png" alt="Future Business System">
+                            <span class="item-company">
+                              Future Business System
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Senior Full-stack Developer & Technical Leader</h4>
+                            <span class="item-company">
+                              <i class="fas fa-map-marker-alt"></i>&nbsp; Melbourne, Australia
+                            </span>
+                            <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique,
+                              ornare felis id, congue libero. Nam volutpat euismod quam.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">10/2015 - 04/2016</h5>
+                            <img class="company_logo" src="images/companies/smartosc.png" alt="SmartOSC">
+                            <span class="item-company">
+                              SmartOSC
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Senior Full-stack Developer</h4>
+                            <span class="item-company">
+                              <i class="fas fa-map-marker-alt"></i>&nbsp; Hanoi, Vietnam
+                            </span>
+                            <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue vitae nunc ac,
+                              sodales ultricies diam. Nullam justo leo, tincidunt sit amet.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">07/2015 - 10/2015</h5>
+                            <img class="company_logo" src="images/companies/niteco.png" alt="Niteco">
+                            <span class="item-company">
+                              Niteco
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Full-stack Developer</h4>
+                            <span class="item-company">
+                              <i class="fas fa-map-marker-alt"></i>&nbsp; Hanoi, Vietnam
+                            </span>
+                            <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue vitae nunc ac,
+                              sodales ultricies diam. Nullam justo leo, tincidunt sit amet.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">03/2013 - 07/2015</h5>
+                            <img class="company_logo" src="images/companies/fpt.png" alt="FPT Software">
+                            <span class="item-company">
+                              FPT Software
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Full-stack Developer</h4>
+                            <span class="item-company">
+                              <i class="fas fa-map-marker-alt"></i>&nbsp; Danang, Vietnam
+                            </span>
+                            <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue vitae nunc ac,
+                              sodales ultricies diam. Nullam justo leo, tincidunt sit amet.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="block-title">
+                        <h3>Onsite<span></span></h3>
+                      </div>
+
+                      <div class="timeline timeline-second-style clearfix">
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">11/2015 - 02/2016</h5>
+                            <img class="company_logo" src="images/companies/coles.png" alt="Coles">
+                            <span class="item-company">
+                              Coles
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Senior Full-stack Developer</h4>
+                            <span class="item-company"><i class="fas fa-map-marker-alt"></i>&nbsp; Hanoi, Vietnam</span>
+                            <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue vitae nunc ac,
+                              sodales ultricies diam. Nullam justo leo, tincidunt sit amet.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">11/2014 - 04/2015</h5>
+                            <img class="company_logo_50" src="images/companies/petronas.jpeg" alt="Coles">
+                            <span class="item-company">
+                              Petronas ICT
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Full-stack Developer</h4>
+                            <span class="item-company"><i class="fas fa-map-marker-alt"></i>&nbsp; Kuala Lumpur,
+                              Malaysia</span>
+                            <p>This is a project of Petronas, the biggest company in Malaysia about mineral and oil.
+                              This
+                              project aims to help the company transform from paper to digital management. All
+                              information and documents are stored on computers in order to shorten management time and
+                              improve quality.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="block-title">
+                        <h3>Part-time<span></span></h3>
+                      </div>
+
+                      <div class="timeline timeline-second-style clearfix">
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">04/2018 - Current</h5>
+                            <img class="company_logo" src="images/companies/househomelove.png" alt="House Home Love">
+                            <span class="item-company">
+                              House Home Love
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Solution Architect</h4>
+                            <span class="item-company"><i class="fas fa-map-marker-alt"></i>&nbsp; Melbourne,
+                              Australia</span>
+                              <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue vitae nunc ac,
+                                sodales ultricies diam. Nullam justo leo, tincidunt sit amet.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">06/2017 - 10/2017</h5>
+                            <img class="company_logo_50" src="images/companies/petronas.jpeg" alt="Caterwin">
+                            <span class="item-company">
+                              Caterwin
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Project Manager</h4>
+                            <span class="item-company"><i class="fas fa-map-marker-alt"></i>&nbsp; Melbourne,
+                              Australia</span>
+                              <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue vitae nunc ac,
+                                sodales ultricies diam. Nullam justo leo, tincidunt sit amet.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">04/2017 - 06/2017</h5>
+                            <img class="company_logo_50" src="images/companies/thegreenleaf.png" alt="The Green Leaf">
+                            <span class="item-company">
+                              The Green Leaf
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Solution Architect</h4>
+                            <span class="item-company"><i class="fas fa-map-marker-alt"></i>&nbsp; Melbourne,
+                              Australia</span>
+                              <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue vitae nunc ac,
+                                sodales ultricies diam. Nullam justo leo, tincidunt sit amet.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">04/2017 - 06/2017</h5>
+                            <img class="company_logo" src="images/companies/nav.jpeg" alt="Navaron">
+                            <span class="item-company">
+                              Navaron
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Senior .Net Fullstack Developer</h4>
+                            <span class="item-company"><i class="fas fa-map-marker-alt"></i>&nbsp; Melbourne,
+                              Australia</span>
+                              <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue vitae nunc ac,
+                                sodales ultricies diam. Nullam justo leo, tincidunt sit amet.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">02/2015 - 04/2015</h5>
+                            <img class="company_logo" src="images/companies/stuff.png" alt="Stuff Hopper">
+                            <span class="item-company">
+                              Stuff Hopper
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">iOS Developer</h4>
+                            <span class="item-company"><i class="fas fa-map-marker-alt"></i>&nbsp; Seattle, USA</span>
+                            <p>This is a project of StuffHopper Company in the US. The project is about retail. When
+                              users need to sell their products, they can use this app to take photos and send to admin.
+                              This application is currently available on Apple Store (USA) with the name: “StuffHopper”.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">07/2014 - 02/2015</h5>
+                            <img class="company_logo" src="images/companies/medicyne.png" alt="Medicyne">
+                            <span class="item-company">
+                              Medicyne
+                            </span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">iOS Developer</h4>
+                            <span class="item-company"><i class="fas fa-map-marker-alt"></i>&nbsp; San Francisco,
+                              USA</span>
+                            <p>This is a project of Medicyne Company in the US. The project is about medicine. When
+                              users are ill or in pain, they can use this app to search for their symptoms. The system
+                              will automatically chat with them to get information and provide. In addition, users can
+                              view drugs information, pharmacies locations and check out products.
+                              This application is currently available on Apple Store (USA) with the name: “Medicyne”.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="block-title">
+                        <h3>Certificate</h3>
+                      </div>
+
+                      <div class="timeline timeline-second-style bs-30 clearfix">
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">08/2015</h5>
+                            <img class="company_logo" src="images/companies/episerver.jpeg" alt="Epi Server">
+                            <span class="item-company">Epi Server</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Epi Server CMS 7</h4>
+                            <p>Episerver is a content management system (CMS) for web publication developed in Sweden.
+                              Episerver CMS is used to enable multiple web editors to jointly develop a larger
+                              organisation’s external website, extranet or intranet. The web editors need not install
+                              any special software on their computers as they can use a web browser to edit web pages.
+                              Nor do the web editors need to know about HTML and other underlying technologies. Instead,
+                              they can work in a similar manner to standard word processing. Episerver CMS is based on
+                              Microsoft’s .NET platform.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">03/2014</h5>
+                            <img class="company_logo" src="images/companies/microsoft.jpeg" alt="Microsoft">
+                            <span class="item-company">Microsoft</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Programming in HTML5 with JavaScript and CSS3</h4>
+                            <p>Programming in HTML5 with JavaScript and CSS3 exam is one of the two exams required to
+                              get your Microsoft Certified Solutions Associate (MCSA) Web Applications Certification.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">02/2014</h5>
+                            <img class="company_logo" src="images/companies/microsoft.jpeg" alt="Microsoft">
+                            <span class="item-company">Microsoft</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Microsoft Certified Professional</h4>
+                            <p>Microsoft Certified Professional (MCP) certification validates IT professional and
+                              developer technical expertise through rigorous, industry-proven, and industry-recognized
+                              exams. MCP exams cover a wide range of Microsoft products, technologies, and solutions.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="col-inner">
+
+                      <div class="block-title">
+                        <h3>Professional Summary<span></span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                        <ul>
+                          <li>9 year experience in software development. (WebApp, WinForm and Hybrid mobile app).</li>
+                          <li>Understanding of software development processes and concepts.</li>
+                          <li>Having development experiences in title insurance, medicine, social networking, management
+                            system and e-commerce system.</li>
+                          <li>Having experience on cloud technologies such as AWS, Microsoft Azure.</li>
+                          <li>Having experience on automated testing (Specflow, Slenium framework).</li>
+                          <li>Be able to work under high pressure.</li>
+                          <li>A proven ability to perform any assigned task.</li>
+                          <li>Ability to proactively identify and resolve problems.</li>
+                          <li>Willing to lear and take direction.</li>
+                        </ul>
+                      </div>
+
+                      <br>
+
+                      <div class="block-title">
+                        <h3>Software Development<span></span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                        <!-- Skill 1 -->
+                        <div class="clearfix">
+                          <h4>Algorithms</h4>
+                          <div class="skill-value">85%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-85"></div>
+                        </div>
+                        <!-- /Skill 1 -->
+
+                        <!-- Skill 2 -->
+                        <div class="clearfix">
+                          <h4>Data Structures</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-80"></div>
+                        </div>
+                        <!-- /Skill 2 -->
+
+                        <!-- Skill 3 -->
+                        <div class="clearfix">
+                          <h4>System Designs</h4>
+                          <div class="skill-value">85%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-85"></div>
+                        </div>
+                        <!-- /Skill 3 -->
+
+                        <div class="clearfix">
+                          <h4>Problem Solving</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-90"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>Cloud Computing (AWS, Microsoft Azure)</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-80"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>Automated Testing (Specflow, Slenium framework)</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-90"></div>
+                        </div>
+
+                      </div>
+
+                      <br>
+
+                      <div class="block-title ts-10">
+                        <h3>Coding Skills<span></span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+
+                        <div class="clearfix">
+                          <h4>C, C++, Java</h4>
+                          <div class="skill-value">55%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-55"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>Web Design (HTML5, CSS3, JavaScript...)</h4>
+                          <div class="skill-value">85%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-85"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>Angular & AngularJs</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-90"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>ReactJs</h4>
+                          <div class="skill-value">60%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-60"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>CMS (Umbraco, Sitecore, EpiServer)</h4>
+                          <div class="skill-value">70%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-70"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>C# .NET</h4>
+                          <div class="skill-value">100%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-9"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>Database (Microsoft SQL Server, My SQL)</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-80"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>Mobile Hybrid Application Development (Ionic Framework)</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-90"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>GIT</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-90"></div>
+                        </div>
+                      </div>
+
+                      <br>
+
+                      <div class="block-title ts-10">
+                        <h3>Architecture<span></span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                        <div class="clearfix">
+                          <h4>Message Queueing</h4>
+                          <div class="skill-value">85%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-85"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>Command Query Responsibility Segregation</h4>
+                          <div class="skill-value">85%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-85"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>Microservices</h4>
+                          <div class="skill-value">85%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-85"></div>
+                        </div>
+
+                        <div class="clearfix">
+                          <h4>Design Patterns</h4>
+                          <div class="skill-value">75%</div>
+                        </div>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-75"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="col-inner ts-30">
+                      <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Resume Subpage -->
+
+
+          <!-- Portfolio Subpage -->
+          <section class="pt-page" data-id="portfolio">
+            <div class="section-inner custom-page-content">
+              <div class="section-title-block second-style">
+                <h2 class="section-title">Portfolio</h2>
+                <h5 class="section-description">My Works</h5>
+              </div>
+
+              <div class="section-content">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <!-- Portfolio Content -->
+                    <div class="portfolio-content">
+
+                      <ul class="portfolio-filters">
+                        <li class="active">
+                          <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                        </li>
+                        <li>
+                          <a class="filter btn btn-sm btn-link" data-group="category_media">Media</a>
+                        </li>
+                        <li>
+                          <a class="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
+                        </li>
+                        <li>
+                          <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>
+                        </li>
+                        <li>
+                          <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Vimeo Videos</a>
+                        </li>
+                        <li>
+                          <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube Videos</a>
+                        </li>
+                      </ul>
+
+                      <!-- Portfolio Grid -->
+                      <div class="portfolio-grid three-columns">
+
+                        <figure class="item lbaudio" data-groups='["category_all", "category_soundcloud"]'>
+                          <div class="portfolio-item-img">
+                            <img src="images/portfolio/1.jpg" alt="SoundCloud Audio" title="" />
+                            <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&#038;color=%23ff5500&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false&#038;show_teaser=true&#038;visual=true"
+                              class="lightbox mfp-iframe" title="SoundCloud Audio"></a>
+                          </div>
+
+                          <i class="fa fa-volume-up"></i>
+                          <h4 class="name">SoundCloud Audio</h4>
+                          <span class="category">SoundCloud</span>
+                        </figure>
+
+                        <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                          <div class="portfolio-item-img">
+                            <img src="images/portfolio/2.jpg" alt="Media Project 2" title="" />
+                            <a href="portfolio-1.html" class="ajax-page-load"></a>
+                          </div>
+
+                          <i class="far fa-file-alt"></i>
+                          <h4 class="name">Media Project 2</h4>
+                          <span class="category">Media</span>
+                        </figure>
+
+                        <figure class="item lbvideo" data-groups='["category_all", "category_vimeo-videos"]'>
+                          <div class="portfolio-item-img">
+                            <img src="images/portfolio/3.jpg" alt="Vimeo Video 1" title="" />
+                            <a href="https://player.vimeo.com/video/158284739" class="lightbox mfp-iframe"
+                              title="Vimeo Video 1"></a>
+                          </div>
+
+                          <i class="fas fa-video"></i>
+                          <h4 class="name">Vimeo Video 1</h4>
+                          <span class="category">Vimeo Videos</span>
+                        </figure>
+
+                        <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                          <div class="portfolio-item-img">
+                            <img src="images/portfolio/4.jpg" alt="Media Project 1" title="" />
+                            <a href="portfolio-1.html" class="ajax-page-load"></a>
+                          </div>
+
+                          <i class="far fa-file-alt"></i>
+                          <h4 class="name">Media Project 1</h4>
+                          <span class="category">Media</span>
+                        </figure>
+
+                        <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
+                          <div class="portfolio-item-img">
+                            <img src="images/portfolio/5.jpg" alt="Mockup Design 1" title="" />
+                            <a class="lightbox" title="Mockup Design 1" href="images/portfolio/5.jpg"></a>
+                          </div>
+
+                          <i class="far fa-image"></i>
+                          <h4 class="name">Mockup Design 1</h4>
+                          <span class="category">Mockups</span>
+                        </figure>
+
+                        <figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'>
+                          <div class="portfolio-item-img">
+                            <img src="images/portfolio/6.jpg" alt="YouTube Video 1" title="" />
+                            <a href="https://www.youtube.com/embed/bg0gv2YpIok" class="lightbox mfp-iframe"
+                              title="YouTube Video 1"></a>
+                          </div>
+
+                          <i class="fas fa-video"></i>
+                          <h4 class="name">YouTube Video 1</h4>
+                          <span class="category">YouTube Videos</span>
+                        </figure>
+                      </div>
+                    </div>
+                    <!-- /Portfolio Content -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /Portfolio Subpage -->
+
+          <!-- Blog Subpage -->
+          <section class="pt-page" data-id="blog">
+            <div class="section-inner custom-page-content">
+              <div class="section-title-block second-style">
+                <h2 class="section-title">Blog</h2>
+                <h5 class="section-description">My Diary</h5>
+              </div>
+
+              <div class="section-content">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="blog-masonry two-columns clearfix">
+
+                      <!-- Blog Post 1 -->
+                      <div class="item post-1">
+                        <div class="blog-card">
+                          <div class="media-block">
+                            <div class="category">
+                              <a href="#" title="View all posts in UI">UI</a>
                             </div>
-                            <br>
-                             <iframe width="100%"
-                                    height="210"
-                                    frameborder="0" style="border:0"
-                                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAKHzvrzp4TdReRAAS27n2XQhoVWw-_JUw&q=600+Bourke+St,+Melbourne+VIC+300" allowfullscreen></iframe>
+                            <a href="blog-post-1.html">
+                              <img src="images/blog/blog_post_6.jpg" class="size-blog-masonry-image-two-c"
+                                alt="Best Practices for Animated Progress Indicators" title="" />
+                              <div class="mask"></div>
+                            </a>
+                          </div>
+                          <div class="post-info">
+                            <div class="post-date">06 Apr 2018</div>
+                            <a href="blog-post-1.html">
+                              <h4 class="blog-item-title">Best Practices for Animated Progress Indicators</h4>
+                            </a>
+                          </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                      </div>
+                      <!-- End of Blog Post 1 -->
 
-    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title">Modal title</h4>
+                      <!-- Blog Post 2 -->
+                      <div class="item post-2">
+                        <div class="blog-card">
+                          <div class="media-block">
+                            <div class="category">
+                              <a href="#" title="View all posts in E-Commerce">E-Commerce</a>
+                            </div>
+                            <a href="blog-post-1.html">
+                              <img src="images/blog/blog_post_5.jpg" class="size-blog-masonry-image-two-c "
+                                alt="Designing the Perfect Feature Comparison Table" title="" />
+                              <div class="mask"></div>
+                            </a>
+                          </div>
+                          <div class="post-info">
+                            <div class="post-date">06 Apr 2018</div>
+                            <a href="blog-post-1.html">
+                              <h4 class="blog-item-title">Designing the Perfect Feature Comparison Table</h4>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End of Blog Post 2 -->
+
+                      <!-- Blog Post 3 -->
+                      <div class="item post-3">
+                        <div class="blog-card">
+                          <div class="media-block">
+                            <div class="category">
+                              <a href="#" title="View all posts in E-Commerce">E-Commerce</a>
+                            </div>
+                            <a href="blog-post-1.html">
+                              <img src="images/blog/blog_post_4.jpg" class="size-blog-masonry-image-two-c"
+                                alt="An Overview of E-Commerce Platforms" title="" />
+                              <div class="mask"></div>
+                            </a>
+                          </div>
+                          <div class="post-info">
+                            <div class="post-date">06 Apr 2018</div>
+                            <a href="blog-post-1.html">
+                              <h4 class="blog-item-title">An Overview of E-Commerce Platforms</h4>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End of Blog Post 3 -->
+
+                      <!-- Blog Post 4 -->
+                      <div class="item post-4">
+                        <div class="blog-card">
+                          <div class="media-block">
+                            <div class="category">
+                              <a href="#" title="View all posts in Design">Design</a>
+                            </div>
+                            <a href="blog-post-1.html">
+                              <img src="images/blog/blog_post_3.jpg" class="size-blog-masonry-image-two-c"
+                                alt="Why I Switched to Sketch For UI Design" title="" />
+                              <div class="mask"></div>
+                            </a>
+                          </div>
+                          <div class="post-info">
+                            <div class="post-date">06 Apr 2018</div>
+                            <a href="blog-post-1.html">
+                              <h4 class="blog-item-title">Why I Switched to Sketch For UI Design</h4>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End of Blog Post 4 -->
+
+                      <!-- Blog Post 5 -->
+                      <div class="item post-5">
+                        <div class="blog-card">
+                          <div class="media-block">
+                            <div class="category">
+                              <a href="#" title="View all posts in UI">UI</a>
+                            </div>
+                            <a href="blog-post-1.html">
+                              <img src="images/blog/blog_post_2.jpg" class="size-blog-masonry-image-two-c"
+                                alt="Creative and Innovative Navigation Designs" title="" />
+                              <div class="mask"></div>
+                            </a>
+                          </div>
+                          <div class="post-info">
+                            <div class="post-date">06 Apr 2018</div>
+                            <a href="blog-post-1.html">
+                              <h4 class="blog-item-title">Creative and Innovative Navigation Designs</h4>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End of Blog Post 5 -->
+
+                      <!-- Blog Post 6 -->
+                      <div class="item post-6">
+                        <div class="blog-card">
+                          <div class="media-block">
+                            <div class="category">
+                              <a href="#" title="View all posts in Design">Design</a>
+                            </div>
+                            <a href="blog-post-1.html">
+                              <img src="images/blog/blog_post_1.jpg" class="size-blog-masonry-image-two-c"
+                                alt="6 Easy Steps to Better Icon Design" title="" />
+                              <div class="mask"></div>
+                            </a>
+                          </div>
+                          <div class="post-info">
+                            <div class="post-date">06 Apr 2018</div>
+                            <a href="blog-post-1.html">
+                              <h4 class="blog-item-title">6 Easy Steps to Better Icon Design</h4>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End of Blog Post 6 -->
+                    </div>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <p>One fine body…</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+              </div>
             </div>
+          </section>
+          <!-- /Blog Subpage -->
+
+          <!-- Contact Subpage -->
+          <section class="pt-page" data-id="contact">
+            <div class="section-inner custom-page-content">
+              <div class="section-title-block second-style">
+                <h2 class="section-title">Contact</h2>
+                <h5 class="section-description">Get in Touch</h5>
+              </div>
+
+              <div class="section-content">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <iframe width="100%" height="210" frameborder="0" style="border:0"
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAKHzvrzp4TdReRAAS27n2XQhoVWw-_JUw&q=600+Bourke+St,+Melbourne+VIC+300"
+                      allowfullscreen></iframe>
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3">
+                    <div class="col-inner bs-30">
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-phone-handset"></i>
+                        <h4>(+61) 420 833 757</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-3">
+                    <div class="col-inner bs-30">
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-map-marker"></i>
+                        <h4>Melbourne, Australia</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-3">
+                    <div class="col-inner bs-30">
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-envelope"></i>
+                        <h4>thanhvo.melbourne@gmail.com</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-3">
+                    <div class="col-inner bs-30">
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-checkmark-circle"></i>
+                        <h4>Freelance Available</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class=" col-xs-12 col-sm-8 offset-sm-1 offset-sm-2">
+                  <div class="col-inner ts-20">
+                    <div class="block-title">
+                      <h3>How Can I Help You?</h3>
+                    </div>
+
+                    <form id="contact_form" class="contact-form" action="contact_form/contact_form.php" method="post">
+
+                      <div class="messages"></div>
+
+                      <div class="controls two-columns">
+                        <div class="fields clearfix">
+                          <div class="left-column">
+                            <div class="form-group form-group-with-icon">
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name"
+                                required="required" data-error="Name is required.">
+                              <div class="form-control-border"></div>
+                              <div class="help-block with-errors"></div>
+                            </div>
+
+                            <div class="form-group form-group-with-icon">
+                              <input id="form_email" type="email" name="email" class="form-control"
+                                placeholder="Email Address" required="required" data-error="Valid email is required.">
+                              <div class="form-control-border"></div>
+                              <div class="help-block with-errors"></div>
+                            </div>
+
+                            <div class="form-group form-group-with-icon">
+                              <input id="form_subject" type="text" name="subject" class="form-control"
+                                placeholder="Subject" required="required" data-error="Subject is required.">
+                              <div class="form-control-border"></div>
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                          <div class="right-column">
+                            <div class="form-group form-group-with-icon">
+                              <textarea id="form_message" name="message" class="form-control" placeholder="Message"
+                                rows="7" required="required" data-error="Please, leave me a message."></textarea>
+                              <div class="form-control-border"></div>
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
+
+                        <input type="submit" class="button btn-send" value="Send message">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Contact Subpage -->
+
         </div>
+      </div>
+      <!-- /Page changer wrapper -->
     </div>
+    <!-- /Main Content -->
+  </div>
 
-     <footer id="footer">
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p>&copy; 2019 Anthony Vo</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="pull-right">Crafted by <a href="http://anthonyvo.dev/">Anthony Vo</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
-    </html>
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/pages-switcher.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/validator.js"></script>
+  <script src="js/jquery.shuffle.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/jquery.googlemap.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

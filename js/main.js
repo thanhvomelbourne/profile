@@ -1,217 +1,304 @@
-function debounce(func, wait, immediate) {
-  var timeout;
-  return function () {
-    var context = this, args = arguments;
-    var later = function () {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-};
+/*
+* Template Name: Kerge - Resume / CV / vCard Template
+* Author: lmpixels
+* Author URL: http://themeforest.net/user/lmpixels
+* Version: 2.4
+*/
 
-jQuery(function ($) {
-  $(document).ready(function () {
-    //Preloader
-    var preloader = $('.preloader');
-    $(window).load(function () {
-      preloader.remove();
-    });
+(function ($) {
+    "use strict";
+    // Portfolio subpage filters
+    function portfolio_init() {
+        var portfolio_grid = $('.portfolio-grid'),
+            portfolio_filter = $('.portfolio-filters');
 
+        if (portfolio_grid) {
 
-    var trianglify = Trianglify({
-      width: window.innerWidth,
-      height: 650,
-      variance: 0.75,
-      cell_size: 50,
-      seed: Math.random(),
-      x_colors: ['#337ab7', '#25406e', '#2f5e97'],
-      y_colors: ['#213963', '#337ab7', '#162140']
-    });
+            portfolio_grid.shuffle({
+                speed: 450,
+                itemSelector: 'figure'
+            });
 
-    trianglify.canvas(document.querySelector('#bg-canvas'));
+            portfolio_filter.on("click", ".filter", function (e) {
+                portfolio_grid.shuffle('update');
+                e.preventDefault();
+                $('.portfolio-filters .filter').parent().removeClass('active');
+                $(this).parent().addClass('active');
+                portfolio_grid.shuffle('shuffle', $(this).attr('data-group'));
+            });
 
-    particlesJS.load('bg-particle', 'js/particles.config.json');
-
-    // Animate Text scale-up-texts
-    anime.timeline({loop: true})
-      .add({
-        targets: '.scale-up-texts span:nth-child(1)',
-        opacity: [0,1],
-        scale: [0.2, 1],
-        duration: 500
-      })
-      .add({
-        targets: '.scale-up-texts span:nth-child(1)',
-        opacity: 0,
-        scale: 3,
-        duration: 800,
-        easing: "easeInExpo",
-        delay: 1000
-      })
-      .add({
-        targets: '.scale-up-texts span:nth-child(2)',
-        opacity: [0,1],
-        scale: [0.2, 1],
-        duration: 500
-      })
-      .add({
-        targets: '.scale-up-texts span:nth-child(2)',
-        opacity: 0,
-        scale: 3,
-        duration: 800,
-        easing: "easeInExpo",
-        delay: 10000
-      });
-
-
-    // Typed Text
-    var typed = new Typed('.typed-texts',{
-      strings: [
-        'Senior .NET Fullstack Developer',
-        'C# .NET',
-        'HTML5, CSS3, JS',
-        'Ionic Framework, AngularJs',
-        'Umbraco, Sitecore, EpiServer'
-      ],
-      typeSpeed: 20,
-      backSpeed: 10,
-      backDelay: 2000,
-      startDelay: 1000,
-      loop: true
-    });
-
-    //#main-slider
-    // var slideHeight = $(window).height();
-    // $('#home-slider .item').css('height',slideHeight);
-    //
-    // $(window).resize(function(){'use strict',
-    // 	$('#home-slider .item').css('height',slideHeight);
-    // });
-
-
-    //Scroll Menu
-    //$(window).on('scroll', function(){
-    //	if( $(window).scrollTop()>slideHeight ){
-    //		$('.main-nav').addClass('navbar-fixed-top');
-    //	} else {
-    //		$('.main-nav').removeClass('navbar-fixed-top');
-    //	}
-    //});
-
-    // Navigation Scroll
-    $(window).scroll(function (event) {
-      Scroll();
-    });
-
-    $('.navbar-collapse ul li a').on('click', function () {
-      $('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
-      return false;
-    });
-
-    // User define function
-    function Scroll() {
-      var contentTop = [];
-      var contentBottom = [];
-      var winTop = $(window).scrollTop();
-      var rangeTop = 200;
-      var rangeBottom = 500;
-      $('.navbar-collapse').find('.scroll a').each(function () {
-        contentTop.push($($(this).attr('href')).offset().top);
-        contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
-      })
-      $.each(contentTop, function (i) {
-        if (winTop > contentTop[i] - rangeTop) {
-          $('.navbar-collapse li.scroll')
-            .removeClass('active')
-            .eq(i).addClass('active');
         }
-      })
-    };
+    }
+    // /Portfolio subpage filters
 
-    $('#tohash').on('click', function () {
-      //$('html, body').animate({scrollTop: $(this.hash).offset().top - 70}, 1000);
-      return false;
-    });
+    // Contact form validator
+    $(function () {
 
-    //Initiat WOW JS
-    new WOW().init();
-    //smoothScroll
-    smoothScroll.init();
+        $('#contact_form').validator();
 
-    // Progress Bar
-    $('#about-us').bind('inview', function (event, visible, visiblePartX, visiblePartY) {
-      if (visible) {
-        $.each($('div.progress-bar'), function () {
-          $(this).css('width', $(this).attr('aria-valuetransitiongoal') + '%');
+        $('#contact_form').on('submit', function (e) {
+            if (!e.isDefaultPrevented()) {
+                var url = "contact_form/contact_form.php";
+
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: $(this).serialize(),
+                    success: function (data) {
+                        var messageAlert = 'alert-' + data.type;
+                        var messageText = data.message;
+
+                        var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                        if (messageAlert && messageText) {
+                            $('#contact_form').find('.messages').html(alertBox);
+                            $('#contact_form')[0].reset();
+                        }
+                    }
+                });
+                return false;
+            }
         });
-        $(this).unbind('inview');
-      }
     });
+    // /Contact form validator
 
-    //Countdown
-    //$('#features').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-    //	if (visible) {
-    //		$(this).find('.timer').each(function () {
-    //			var $this = $(this);
-    //			$({ Counter: 0 }).animate({ Counter: $this.text() }, {
-    //				duration: 2000,
-    //				easing: 'swing',
-    //				step: function () {
-    //					$this.text(Math.ceil(this.Counter));
-    //				}
-    //			});
-    //		});
-    //		$(this).unbind('inview');
-    //	}
-    //});
+    // Hide Mobile menu
+    function mobileMenuHide() {
+        var windowWidth = $(window).width(),
+            siteHeader = $('#site_header');
 
-    // Portfolio Single View
-    $('#portfolio').on('click', '.folio-read-more', function (event) {
-      event.preventDefault();
-      var link = $(this).data('single_url');
-      var full_url = '#portfolio-single-wrap',
-        parts = full_url.split("#"),
-        trgt = parts[1],
-        target_top = $("#" + trgt).offset().top;
-
-      $('html, body').animate({scrollTop: target_top}, 600);
-      $('#portfolio-single').slideUp(500, function () {
-        $(this).load(link, function () {
-          $(this).slideDown(500);
-        });
-      });
-    });
-
-    // Close Portfolio Single View
-    $('#portfolio-single-wrap').on('click', '.close-folio-item', function (event) {
-      event.preventDefault();
-      var full_url = '#portfolio',
-        parts = full_url.split("#"),
-        trgt = parts[1],
-        target_offset = $("#" + trgt).offset(),
-        target_top = target_offset.top;
-      $('html, body').animate({scrollTop: target_top}, 600);
-      $("#portfolio-single").slideUp(500);
-    });
-
-    // Contact form
-    var form = $('#main-contact-form');
-    form.submit(function (event) {
-      event.preventDefault();
-      var form_status = $('<div class="form_status"></div>');
-      $.ajax({
-        url: $(this).attr('action'),
-        beforeSend: function () {
-          form.prepend(form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn());
+        if (windowWidth < 992) {
+            siteHeader.addClass('mobile-menu-hide');
+            setTimeout(function () {
+                siteHeader.addClass('animate');
+            }, 500);
+        } else {
+            siteHeader.removeClass('animate');
         }
-      }).done(function (data) {
-        form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
-      });
-    });
-  })
-});
+    }
+    // /Hide Mobile menu
 
+    //On Window load & Resize
+    $(window)
+        .on('load', function () { //Load
+            // Animation on Page Loading
+            $(".preloader").fadeOut(800, "linear");
+
+            // initializing page transition.
+            var ptPage = $('.subpages');
+            if (ptPage[0]) {
+                PageTransitions.init({
+                    menu: 'ul.site-main-menu',
+                });
+            }
+        })
+        .on('resize', function () { //Resize
+            mobileMenuHide();
+        });
+
+
+    // On Document Load
+    $(document).on('ready', function () {
+        // Initialize Portfolio grid
+        var $portfolio_container = $(".portfolio-grid");
+        $portfolio_container.imagesLoaded(function () {
+            portfolio_init(this);
+        });
+
+        // Blog grid init
+        var $container = $(".blog-masonry");
+        $container.imagesLoaded(function () {
+            $container.masonry();
+        });
+
+        // Mobile menu
+        $('.menu-toggle').on("click", function () {
+            $('#site_header').addClass('animate');
+            $('#site_header').toggleClass('mobile-menu-hide');
+        });
+
+        // Mobile menu hide on main menu item click
+        $('.site-main-menu').on("click", "a", function (e) {
+            mobileMenuHide();
+        });
+
+        // Sidebar toggle
+        $('.sidebar-toggle').on("click", function () {
+            $('#blog-sidebar').toggleClass('open');
+        });
+
+        // Testimonials Slider
+        $(".testimonials.owl-carousel").owlCarousel({
+            nav: true, // Show next/prev buttons.
+            items: 3, // The number of items you want to see on the screen.
+            loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
+            navText: false,
+            margin: 25,
+            responsive: {
+                // breakpoint from 0 up
+                0: {
+                    items: 1,
+                },
+                // breakpoint from 480 up
+                480: {
+                    items: 1,
+                },
+                // breakpoint from 768 up
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 2,
+                }
+            }
+        });
+
+
+        $(".clients.owl-carousel").imagesLoaded().owlCarousel({
+            nav: true, // Show next/prev buttons.
+            items: 2, // The number of items you want to see on the screen.
+            loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
+            navText: false,
+            margin: 10,
+            autoHeight: false,
+            responsive: {
+                // breakpoint from 0 up
+                0: {
+                    items: 2,
+                },
+                // breakpoint from 768 up
+                768: {
+                    items: 4,
+                },
+                1200: {
+                    items: 6,
+                }
+            }
+        });
+
+
+        // Text rotation
+        $('.text-rotation').owlCarousel({
+            loop: true,
+            dots: false,
+            nav: false,
+            margin: 0,
+            items: 1,
+            autoplay: true,
+            autoplayHoverPause: false,
+            autoplayTimeout: 3800,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn'
+        });
+
+        // Lightbox init
+        $('body').magnificPopup({
+            delegate: 'a.lightbox',
+            type: 'image',
+            removalDelay: 300,
+
+            // Class that is added to popup wrapper and background
+            // make it unique to apply your CSS animations just to this exact popup
+            mainClass: 'mfp-fade',
+            image: {
+                // options for image content type
+                titleSrc: 'title',
+                gallery: {
+                    enabled: true
+                },
+            },
+
+            iframe: {
+                markup: '<div class="mfp-iframe-scaler">' +
+                    '<div class="mfp-close"></div>' +
+                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                    '<div class="mfp-title mfp-bottom-iframe-title"></div>' +
+                    '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+                patterns: {
+                    youtube: {
+                        index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                        id: null, // String that splits URL in a two parts, second part should be %id%
+                        // Or null - full URL will be returned
+                        // Or a function that should return %id%, for example:
+                        // id: function(url) { return 'parsed id'; }
+
+                        src: '%id%?autoplay=1' // URL that will be set as a source for iframe.
+                    },
+                    vimeo: {
+                        index: 'vimeo.com/',
+                        id: '/',
+                        src: '//player.vimeo.com/video/%id%?autoplay=1'
+                    },
+                    gmaps: {
+                        index: '//maps.google.',
+                        src: '%id%&output=embed'
+                    }
+                },
+
+                srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+            },
+
+            callbacks: {
+                markupParse: function (template, values, item) {
+                    values.title = item.el.attr('title');
+                }
+            },
+        });
+
+        $('.ajax-page-load-link').magnificPopup({
+            type: 'ajax',
+            removalDelay: 300,
+            mainClass: 'mfp-fade',
+            gallery: {
+                enabled: true
+            },
+        });
+
+        //Form Controls
+        $('.form-control')
+            .val('')
+            .on("focusin", function () {
+                $(this).parent('.form-group').addClass('form-group-focus');
+            })
+            .on("focusout", function () {
+                if ($(this).val().length === 0) {
+                    $(this).parent('.form-group').removeClass('form-group-focus');
+                }
+            });
+
+        //Google Maps
+        $("#map").googleMap({
+            zoom: 16 // Google Map ZOOM. You can change this value
+        });
+        $("#map").addMarker({
+            address: "Melbourne, Australia", // Your Address. Change it
+        });
+
+        // Typed Text
+        var typed = new Typed('.typed-texts', {
+            strings: [
+                'Senior Fullstack Developer',
+                'Software Engineer'
+            ],
+            typeSpeed: 20,
+            backSpeed: 10,
+            backDelay: 2000,
+            startDelay: 1000,
+            loop: true
+        });
+
+        var typed_mobile = new Typed('.typed-texts-mobile', {
+            strings: [
+                'Senior Fullstack Developer',
+                'Software Engineer'
+            ],
+            typeSpeed: 20,
+            backSpeed: 10,
+            backDelay: 2000,
+            startDelay: 1000,
+            loop: true
+        });
+    });
+
+})(jQuery);
